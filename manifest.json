@@ -1,0 +1,19 @@
+{
+  "name": "Stackoverflow Push Ups",
+  "description": "Make one push up everytime you visit stackoverflow",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting", "webNavigation"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "64": "/images/muscle_icon.png"
+    }
+  },
+  "icons": {
+    "64": "/images/muscle_icon.png"
+  }
+}
