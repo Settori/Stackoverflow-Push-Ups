@@ -15,8 +15,14 @@ body {
     font-weight: bold;
 }
 
+.circle-wrapper {
+    background: linear-gradient(135deg, #00bcd4, #b61fe4);
+    padding: 5px;
+    border-radius: 50%;
+}
+
 .circle {
-    border: 5px solid #00bcd4;
+    background: #ffffff;
     border-radius: 50%;
     width: 10em;
     height: 10em;
