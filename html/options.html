@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/options.css">
+  </head>
+  <body>
+        <div class="container mt-2">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="config-tab" data-bs-toggle="tab" data-bs-target="#config" type="button" role="tab" aria-controls="config" aria-selected="true">Config</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="urls-tab" data-bs-toggle="tab" data-bs-target="#urlsTab" type="button" role="tab" aria-controls="urls" aria-selected="false">Urls</button>
+                </li>
+            </ul>
+            <div class="tab-content mt-2" id="myTabContent">
+                <div class="tab-pane fade show active" id="config" role="tabpanel" aria-labelledby="config-tab">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Link</th>
+                            </tr>
+                        </thead>
+                        <tbody id="filterUrls">
+        
+                        </tbody>
+                    </table>
+                    <div class="mt-2 d-flex">
+                        <input type="text" class="form-control" id="filterUrlInput"/>
+                        <div class="btn btn-primary ms-2" id="filterUrlAddButton">Add</div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="urlsTab" role="tabpanel" aria-labelledby="urls-tab">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Link</th>
+                            </tr>
+                        </thead>
+                        <tbody id="urls">
+        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+  </body>
+  <script src="../js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="../js/options.js"></script>
+</html>
